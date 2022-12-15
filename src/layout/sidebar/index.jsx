@@ -67,15 +67,10 @@ const Sidebar = () => {
         {sideBarIcon.map((element, index) => {
           return (
             <Link as={NextLink} href={element.path} key={index}>
-              <Tooltip label={element.name}
-                closeOnClick={false}
-                // isDisabled={point}
-                placement='right'>
-                <IconButton
-                  color={element.color}
-                  icon={element.icon} aria-label="Dashboard" variant='iconButton'
-                />
-              </Tooltip>
+              <IconButton
+                color={element.color}
+                icon={element.icon} aria-label="Dashboard" variant='iconButton'
+              />
 
               <Hide below='md'>
                 <Text fontWeight='bold' >{element.name}</Text>

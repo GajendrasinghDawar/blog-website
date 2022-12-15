@@ -17,10 +17,14 @@ export default function AboutMe({ children }) {
             padding='1rem'
             fontWeight={'bold'}
         >
-            <Heading>Welcome !</Heading>
+            <Heading
+                variant={'myHeading'}
+            >Welcome !</Heading>
             <Text>Hello! my name is
             </Text>
             <Heading as='h1'
+                variant={'myHeading'}
+                minH='2.6rem'
             >Gajendrasingh Dawar.</Heading>
             <Text>Im a Web Developer. I am Starting my Development Journey with Python and JavaScript, also aim to be a Technical Writer.</Text>
             <Text >I didnt graduate in CS or IT. However, Im working consistently to understand Computer science.

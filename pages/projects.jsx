@@ -1,5 +1,5 @@
 import React from 'react'
-import MyProject from '../src/components/projects/my-project'
+import MyProject from '../src/components/projects/myProjects'
 
 export default function projects() {
     return (
