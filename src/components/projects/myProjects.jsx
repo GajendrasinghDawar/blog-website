@@ -1,6 +1,29 @@
 import { SimpleGrid, Box, Flex, Wrap, WrapItem, Center, Card, CardBody, CardHeader, Heading, CardFooter, Text, Button } from '@chakra-ui/react'
 import React from 'react'
 
+const projects = [
+    {
+        name: 'contacts book',
+        url: 'contacts-book'
+    },
+    {
+        name: 'old portfolio',
+        url: 'old-portfolio'
+    },
+    {
+        name: 'tiny apps django',
+        url: 'tiny-apps-django'
+    },
+    {
+        name: 'api.fakejson.tk',
+        url: 'api-fakejson-tk'
+    },
+    {
+        name: 'e-learning website ',
+        url: 'e-learning-website'
+    },
+]
+
 export default function MyProject() {
     return (
         <Wrap
@@ -24,36 +47,6 @@ export default function MyProject() {
                     </CardHeader>
                     <CardBody>
                         <Text position={'relative'}>Icon</Text>
-                        <Text>View a summary of all your customers over the last month.</Text>
-                    </CardBody>
-                    <CardFooter>
-                        <Button>View here</Button>
-                    </CardFooter>
-                </Card>
-            </WrapItem>
-            <WrapItem
-            >
-
-                <Card>
-                    <CardHeader>
-                        <Heading size='md' color={'text.textColorPink'}> Customer dashboard</Heading>
-                    </CardHeader>
-                    <CardBody>
-                        <Text>View a summary of all your customers over the last month.</Text>
-                    </CardBody>
-                    <CardFooter>
-                        <Button>View here</Button>
-                    </CardFooter>
-                </Card>
-            </WrapItem>
-            <WrapItem
-            >
-
-                <Card>
-                    <CardHeader>
-                        <Heading size='md' color={'text.textColorGreen'}> Customer dashboard</Heading>
-                    </CardHeader>
-                    <CardBody>
                         <Text>View a summary of all your customers over the last month.</Text>
                     </CardBody>
                     <CardFooter>
