@@ -10,6 +10,8 @@ export const Content = ({ children }) => {
       flex={1}
       overflow="hidden"
       spacing={0}
+      borderColor='red'
+      transition={'ease-in-out .4s'}
     >
       <SideBar />
       <VStack
@@ -17,8 +19,6 @@ export const Content = ({ children }) => {
         height="full"
         spacing={0}
         overflowY="auto"
-
-
       >
         {children}
 

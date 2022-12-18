@@ -13,7 +13,7 @@ import fonts from './foundations/fonts'
 import Button from './components/button'
 import Card from './components/card'
 import Heading from './components/heading'
-
+import Drawer from './components/drawer/drawer'
 const overrides = {
     styles,
     colors,
@@ -24,7 +24,8 @@ const overrides = {
     components: {
         Button,
         Card,
-        Heading
+        Heading,
+        Drawer
         // Other components go here
     },
 }

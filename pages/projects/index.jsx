@@ -39,11 +39,11 @@ export default function index() {
     return (
         <Wrap
             // px={'2rem'}
-            my='2rem'
+
             width='full'
             textAlign={'center'}
             overflowY='auto'
-            spacing='30px'
+            spacing={0}
             height={'full'}
             align='center'
             justify='center'
@@ -52,11 +52,14 @@ export default function index() {
 
             {projects.map((project) => {
                 return (
-                    <WrapItem key={index}
+                    <WrapItem
+                        key={index}
+
                     >
 
                         <Card
                             maxW={350}
+                            m='1rem'
                         >
                             <CardHeader>
                                 <Heading size='md' color={project.color}>

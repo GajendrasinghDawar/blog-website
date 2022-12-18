@@ -67,6 +67,7 @@ export const NavBar = () => {
   hsl(0deg 0% 4%) 100%
 )
 '
+
       >
         GajendrasinghDawar
       </Text>
@@ -82,6 +83,7 @@ export const NavBar = () => {
           isChecked ? playOff() : playOn();
         }}
       />
+
     </HStack>
   );
 }
