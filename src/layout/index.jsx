@@ -1,6 +1,10 @@
 import { VStack } from '@chakra-ui/react'
 import { ChakraProvider, } from '@chakra-ui/react'
 
+import "@fontsource/hina-mincho"
+
+import "@fontsource/frijole"
+
 import { NavBar } from './navbar'
 import { Content } from './content'
 import theme from './theme'

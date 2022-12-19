@@ -1,13 +1,10 @@
 const colors = {
     site: {
         colorWhite: "rgb(255 255 255/1)",
-        // colorWhite: "rgb(248, 248, 248)",
-        // colorWhite: "#fff",
         colorBlack: "rgb(0 0 0/1)",
         darkBg: 'rgb(18 18 18 / 1)',
-        // darkBg: '#000',
-        // darkBg: 'rgb(0, 0, 0)',
         whiteBg: " rgb(255 255 255/ 1)",
+
     },
     text: {
         textColorYellow: 'rgb(254 204 27/1)',

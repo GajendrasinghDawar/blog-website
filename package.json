@@ -10,6 +10,12 @@
   },
   "dependencies": {
     "@chakra-ui/react": "latest",
+    "@fontsource/fredoka-one": "^4.5.9",
+    "@fontsource/frijole": "^4.5.10",
+    "@fontsource/grand-hotel": "^4.5.10",
+    "@fontsource/hina-mincho": "^4.5.11",
+    "@fontsource/open-sans": "^4.5.13",
+    "@fontsource/raleway": "^4.5.11",
     "@mdx-js/loader": "^2.2.1",
     "@mdx-js/react": "^2.2.1",
     "@next/mdx": "^13.0.7",

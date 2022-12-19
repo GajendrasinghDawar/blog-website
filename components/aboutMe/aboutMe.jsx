@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Heading, Text, VStack, Container, useColorModeValue, Box } from '@chakra-ui/react'
+import { Heading, Text, VStack, Container, useColorModeValue, Box, Highlight } from '@chakra-ui/react'
 
 
 
@@ -10,10 +10,10 @@ export default function AboutMe({ children }) {
         <Container
             width={'full'}
             height='full'
-            // textAlign='center'
+            textAlign='center'
             centerContent
             maxW='container.lg'
-            pt={2}
+            pt={['7rem', '5rem', '7rem']}
         >
             <Heading
                 variant={'myHeading'}
@@ -24,38 +24,29 @@ export default function AboutMe({ children }) {
             <Heading as='h1'
                 variant={'myHeading'}
                 minH='2.6rem'
-            >Gajendrasingh Dawar.</Heading>
-            <Text>Im a Web Developer. I am Starting my Development Journey with Python and JavaScript, also aim to be a Technical Writer.</Text>
-            <Text >I didnt graduate in CS or IT. However, Im working consistently to understand Computer science.
+            >
+                Gajendrasingh Dawar.</Heading>
+            <Text>
+                <Highlight
+                    query={['Python', 'JavaScript',]}
+                    styles={{ p: '2px', rounded: 'full', bg: '#fecc1b' }}
+                >
+                    I'm a Web Developer. I am Starting my Development Journey with Python and JavaScript, also aim to be a Technical Writer.
+                </Highlight></Text>
+            <Text >I didn't graduate in CS or IT. However, I'm working consistently to understand Computer science.
             </Text>
-            <Text>Im a Web Developer. I am Starting my Development Journey with Python and JavaScript, also aim to be a Technical Writer.</Text>
-            <Text >I didnt graduate in CS or IT. However, Im working consistently to understand Computer science.
+
+            <Text >
+                <Highlight
+                    query={['ReactJs', 'Django',]}
+                    styles={{ p: '2px', m: '2px', rounded: 'full', bg: ['#3992ff', '#f44250'] }}
+                >
+                    I have a decent knowledge of ReactJs and its supporting libraries. At Present, I'm enhancing backend development with Django to build APIs using Django. Additionally, acquiring skills to work in a cloud environment(currently leveraging AWS free tier).
+                </Highlight>
+
             </Text>
-            <Text>Im a Web Developer. I am Starting my Development Journey with Python and JavaScript, also aim to be a Technical Writer.</Text>
-            <Text >I didnt graduate in CS or IT. However, Im working consistently to understand Computer science.
-            </Text>
-            <Text>Im a Web Developer. I am Starting my Development Journey with Python and JavaScript, also aim to be a Technical Writer.</Text>
-            <Text >I didnt graduate in CS or IT. However, Im working consistently to understand Computer science.
-            </Text>
-            <Text>Im a Web Developer. I am Starting my Development Journey with Python and JavaScript, also aim to be a Technical Writer.</Text>
-            <Text >I didnt graduate in CS or IT. However, Im working consistently to understand Computer science.
-            </Text>
-            <Text >I have a decent knowledge of ReactJs and its supporting libraries. At Present, Im enhancing backend development with Django to build APIs using Django. Additionally, acquiring skills to work in a cloud environment(currently leveraging AWS free tier).
-            </Text>
-            <Text >I have a decent knowledge of ReactJs and its supporting libraries. At Present, Im enhancing backend development with Django to build APIs using Django. Additionally, acquiring skills to work in a cloud environment(currently leveraging AWS free tier).
-            </Text>
-            <Text >I have a decent knowledge of ReactJs and its supporting libraries. At Present, Im enhancing backend development with Django to build APIs using Django. Additionally, acquiring skills to work in a cloud environment(currently leveraging AWS free tier).
-            </Text>
-            <Text >I have a decent knowledge of ReactJs and its supporting libraries. At Present, Im enhancing backend development with Django to build APIs using Django. Additionally, acquiring skills to work in a cloud environment(currently leveraging AWS free tier).
-            </Text>
-            <Text >I have a decent knowledge of ReactJs and its supporting libraries. At Present, Im enhancing backend development with Django to build APIs using Django. Additionally, acquiring skills to work in a cloud environment(currently leveraging AWS free tier).
-            </Text>
-            <Text>I&aposm Seeking for a work in backend development in Django or frontend development in ReactJs.</Text>
-            <Text>I&aposm Seeking for a work in backend development in Django or frontend development in ReactJs.</Text>
-            <Text>I&aposm Seeking for a work in backend development in Django or frontend development in ReactJs.</Text>
-            <Text>I&aposm Seeking for a work in backend development in Django or frontend development in ReactJs.</Text>
-            <Text>I&aposm Seeking for a work in backend development in Django or frontend development in ReactJs.</Text>
-            <Text>I&aposm Seeking for a work in backend development in Django or frontend development in ReactJs.</Text>
+            <Text>I'm Seeking for a work in backend development in Django or frontend development in ReactJs.</Text>
+
         </Container>
     )
 }
