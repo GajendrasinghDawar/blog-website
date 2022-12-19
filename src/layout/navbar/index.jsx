@@ -30,11 +30,16 @@ export const NavBar = () => {
   );
   return (
     <HStack
-      width="full"
+      // width="full"
+      width="90%"
       minH={'64px'}
-      borderBottomWidth={1}
+      // borderBottomWidth={1}
+      borderWidth={1}
       justifyContent='space-between'
       px={'2.5rem'}
+
+      mt={2}
+      borderRadius={4}
     >
 
       <Text
@@ -73,6 +78,7 @@ export const NavBar = () => {
       </Text>
       <IconButton
         variant='toggleButton'
+
         onClick={toggleColorMode}
         aria-label='toggle theme'
         icon={colorMode === 'light' ? <TiAdjustBrightness /> : <IoIosMoon />}

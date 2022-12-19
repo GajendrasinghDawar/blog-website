@@ -46,8 +46,13 @@ const Sidebar = () => {
     <>
       <VStack
         width={{ base: '10%', md: '10%', lg: '10%' }}
-        height="full"
-        borderRightWidth={'1px'}
+        // height="full"
+        height="90%"
+        // borderRightWidth={'1px'}
+        borderWidth={'1px'}
+        ml={4}
+        borderRadius={4}
+
         flexShrink={0}
         transition={'ease-in-out .2s'}
         // display='none'

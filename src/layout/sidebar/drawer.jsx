@@ -35,9 +35,10 @@ export default function SideBarDrawer({ isOpen, onOpen, onClose, btnRef }) {
         >
             <DrawerOverlay />
             <DrawerContent>
-                <DrawerCloseButton />
-                <DrawerHeader><Text
-                    fontWeight={700}
+
+                <DrawerHeader>
+                    <Text
+                    // fontWeight={700}
                     bgClip="text"
                     //         fontSize={25}
                     bgGradient='linear-gradient(
@@ -67,7 +68,9 @@ export default function SideBarDrawer({ isOpen, onOpen, onClose, btnRef }) {
 )
 '>
                     GajendrasinghDawar
-                </Text></DrawerHeader>
+                    </Text>
+                    <DrawerCloseButton />
+                </DrawerHeader>
 
                 <DrawerBody>
                     <VStack

@@ -11,9 +11,12 @@ const { definePartsStyle, defineMultiStyleConfig } =
 
 
 const baseStyleCloseButton = defineStyle({
-    position: "absolute",
-    top: "4",
+    position: "relative",
+    top: "-8",
     insetEnd: "3",
+    ml: '.5rem',
+    right: -52,
+
     // my
     background: 'themeButton.whiteBg',
     color: 'themeButton.whiteColor',
@@ -40,15 +43,17 @@ const baseStyleCloseButton = defineStyle({
 })
 
 const baseStyleHeader = defineStyle({
-    px: "6",
-    py: "4",
-    fontSize: "xl",
+    mt: 2,
+    ml: 4,
+    borderRadius: 4,
     fontWeight: "semibold",
     color: 'site.colorBlack',
     bg: 'site.whiteBg',
-    width: "full",
+
+    width: '88%',
+    fontSize: "1.2rem",
     minH: '64px',
-    borderBottomWidth: '1px',
+    borderWidth: '1px',
     _dark: {
         color: 'site.colorWhite',
         backgroundColor: 'site.darkBg ',
@@ -63,21 +68,28 @@ const baseStyleBody = defineStyle({
     overflow: "auto",
     color: 'site.colorBlack',
     bg: 'site.whiteBg',
+    // new style
+    borderWidth: '1px',
+    ml: 4,
+    mt: 1,
+    mb: 1,
+    borderRadius: 4,
+    height: "80%",
+    width: '80%',
     _dark: {
         color: 'site.colorWhite',
         backgroundColor: 'site.darkBg ',
     }
 })
 
-
+const baseStyleDialog = defineStyle((props) => { })
 
 
 const baseStyle = definePartsStyle((props) => ({
-
     header: baseStyleHeader,
     closeButton: baseStyleCloseButton,
     body: baseStyleBody,
-    // footer: baseStyleFooter,
+    dialog: baseStyleDialog,
 }))
 const Drawer = defineMultiStyleConfig({
     baseStyle,
