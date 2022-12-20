@@ -4,7 +4,6 @@ const colors = {
         colorBlack: "rgb(0 0 0/1)",
         darkBg: 'rgb(18 18 18 / 1)',
         whiteBg: " rgb(255 255 255/ 1)",
-
     },
     text: {
         textColorYellow: 'rgb(254 204 27/1)',

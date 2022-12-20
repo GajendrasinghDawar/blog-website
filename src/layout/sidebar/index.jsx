@@ -1,12 +1,13 @@
-import { List, ListItem, Text, VStack, Flex, Box, Hide, Show, Heading, } from '@chakra-ui/react';
-import { useBreakpointValue } from '@chakra-ui/react'
-import { Tooltip, IconButton, Button, useDisclosure } from '@chakra-ui/react';
-import { Link } from '@chakra-ui/react'
-import { VscBook, VscDebugDisconnect, VscSourceControl, } from "react-icons/vsc";
-import { SlHome } from "react-icons/sl";
-import { default as NextLink } from "next/link"
 import { useRef } from 'react';
-import { VscListSelection } from "react-icons/vsc";
+import { Text, VStack, Hide, IconButton, useDisclosure } from '@chakra-ui/react';
+
+import { Link } from '@chakra-ui/react'
+import { default as NextLink } from "next/link"
+import { useRouter } from 'next/router'
+
+import { VscBook, VscDebugDisconnect, VscSourceControl, VscListSelection } from "react-icons/vsc";
+import { SlHome } from "react-icons/sl";
+
 import SideBarDrawer from './drawer';
 
 export const sideBarIcon = [
@@ -18,44 +19,42 @@ export const sideBarIcon = [
   },
   {
     icon: < VscSourceControl />
-    , path: 'projects',
+    , path: '/projects',
     name: 'projects',
     color: 'fill.fillRed'
   },
   {
     icon: <VscBook />
-    , path: 'blogs'
+    , path: '/blogs'
     , name: 'blogs',
     color: 'fill.fillPink'
   },
   {
     icon: <VscDebugDisconnect />
-    , path: 'links',
-    name: 'links',
+    , path: '/find-me',
+    name: 'findMe',
     color: ' fill.fillYellow'
   }
 ]
 
-
-
 const Sidebar = () => {
+
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef()
+
+  const router = useRouter();
+  const currentRoute = router.pathname;
 
   return (
     <>
       <VStack
         width={{ base: '10%', md: '10%', lg: '10%' }}
-        // height="full"
         height="90%"
-        // borderRightWidth={'1px'}
         borderWidth={'1px'}
         ml={4}
         borderRadius={4}
-
         flexShrink={0}
         transition={'ease-in-out .2s'}
-        // display='none'
         spacing={0}
         display={["none", 'none', "inherit", "inherit"]}
       >
@@ -67,10 +66,15 @@ const Sidebar = () => {
           textAlign='center'
           padding={'1rem'}
         >
-
           {sideBarIcon.map((element, index) => {
             return (
-              <Link as={NextLink} href={element.path} key={index}>
+              <Link
+                as={NextLink}
+                href={element.path}
+                key={index + 1}
+                color={currentRoute === element.path ? 'fill.fillBlue' : ''}
+                textDecoration={currentRoute === element.path ? '2px solid underline' : ''}
+              >
                 <IconButton
                   color={element.color}
                   icon={element.icon} aria-label="Dashboard" variant='iconButton'
@@ -94,7 +98,6 @@ const Sidebar = () => {
         bottom={5}
         ref={btnRef}
         variant='menuButton'
-
         onClick={onOpen}
       />
 

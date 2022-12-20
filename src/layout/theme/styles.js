@@ -6,30 +6,13 @@ const styles = {
         return {
             body: {
                 fontFamily: 'myOldFont',
-
-                // color: mode('site.colorBlack', 'site.colorWhite')(props),
                 bg: mode('site.whiteBg', 'site.darkBg')(props),
-                // bgGradient: ` radial-gradient(circle, #e3e3e3, #e3e3e3, #e3e3e3, #e3e3e3, #e3e3e3);`,
-
-                letterSpacing: '1px',
-                lineHeight: "1.4",
+                lineHeight: "1.5",
                 fontSize: '1.2em',
-                letterSpacing: '2px'
-
-
+                letterSpacing: '1px'
             },
-            // a: {
-            //     color: 'inherit',
-            //     _hover: {
-            //     },
-            // },
-            // "*, *::before, &::after": {
-            //     wordWrap: "break-word",
-            // },
         }
     }
-
-
 }
 
 export default styles

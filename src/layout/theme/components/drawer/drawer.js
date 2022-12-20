@@ -1,8 +1,6 @@
-import { mode } from '@chakra-ui/theme-tools'
 import { drawerAnatomy as parts } from "@chakra-ui/anatomy"
 import {
     createMultiStyleConfigHelpers,
-    cssVar,
     defineStyle,
 } from "@chakra-ui/styled-system"
 
@@ -12,34 +10,33 @@ const { definePartsStyle, defineMultiStyleConfig } =
 
 const baseStyleCloseButton = defineStyle({
     position: "relative",
-    top: "-8",
+    top: "-7",
     insetEnd: "3",
     ml: '.5rem',
-    right: -52,
-
-    // my
-    background: 'themeButton.whiteBg',
+    right: "-52",
+    fontSize: '.8em',
+    // background: 'themeButton.whiteBg',
+    background: 'transparent',
+    // opacity: '0.5',
     color: 'themeButton.whiteColor',
     borderRadius: "9999px",
     borderWidth: '1px',
     borderColor: 'transparent',
-    // fontSize: '22px',
     _focusVisible: {
         background: "themeButton.whiteFocusBg",
     },
-
     _dark: {
-        background: 'themeButton.darkBg',
+        // background: 'themeButton.darkBg',
+        background: 'transparent',
         color: 'themeButton.DarkColor',
     },
     _hover: {
-        background: 'themeButton.whiteOnHoverBg',
+        // background: 'themeButton.whiteOnHoverBg',
+        background: 'transparent',
         _dark: {
             bg: `themeButton.darkOnHoverBg`,
         },
     },
-
-
 })
 
 const baseStyleHeader = defineStyle({
@@ -49,7 +46,6 @@ const baseStyleHeader = defineStyle({
     fontWeight: "semibold",
     color: 'site.colorBlack',
     bg: 'site.whiteBg',
-
     width: '88%',
     fontSize: "1.2rem",
     minH: '64px',

@@ -1,4 +1,4 @@
-import { SimpleGrid, Box, Flex, Wrap, WrapItem, Center, Card, CardBody, CardHeader, Heading, CardFooter, Text, Button } from '@chakra-ui/react'
+import { Wrap, WrapItem, Center, Card, CardBody, CardHeader, Heading, CardFooter, Text, Button } from '@chakra-ui/react'
 import React from 'react'
 import Link from 'next/link'
 
@@ -6,32 +6,40 @@ const projects = [
     {
         name: 'contacts book',
         url: 'contacts-book',
-        summary: 'View a summary of all your customers over the last month.',
-        color: 'text.textColorYellow'
+        summary: `It's contacts book app in react and django.
+`, color: 'text.textColorYellow'
     },
     {
         name: 'old portfolio',
         url: 'old-portfolio',
-        summary: 'View a summary of all your customers over the last month.',
+        summary: `It's my old react portfolio Website.
+`,
         color: 'text.textColorPink'
     },
     {
         name: 'tiny apps django',
         url: 'tiny-apps-django',
-        summary: 'View a summary of all your customers over the last month.',
+        summary: `It's collection of  Django apps .`,
         color: 'text.textColorGreen'
     },
     {
         name: 'api.fakejson.tk',
         url: 'api-fakejson',
-        summary: 'View a summary of all your customers over the last month.',
+        summary: `It's django app that serve fake data in json format. 
+`,
         color: 'text.textColorRed'
     },
     {
         name: 'e-learning website ',
         url: 'e-learning-website',
-        summary: 'View a summary of all your customers over the last month.',
+        summary: `This simple E-learning Django website.`,
         color: 'fill.fillBlue'
+    },
+    {
+        name: 'this website ',
+        url: 'this-website',
+        summary: `This portfolio website built using NextJs and ChakraUi.`,
+        color: 'text.textColorRed'
     },
 ]
 
