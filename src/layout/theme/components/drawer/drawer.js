@@ -17,7 +17,6 @@ const baseStyleCloseButton = defineStyle({
     fontSize: '.8em',
     // background: 'themeButton.whiteBg',
     background: 'transparent',
-    // opacity: '0.5',
     color: 'themeButton.whiteColor',
     borderRadius: "9999px",
     borderWidth: '1px',
