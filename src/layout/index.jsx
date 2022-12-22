@@ -1,16 +1,20 @@
-import { VStack } from '@chakra-ui/react'
-import { ChakraProvider, } from '@chakra-ui/react'
+import { useRef } from 'react';
+
+import { ChakraProvider, IconButton, useDisclosure, VStack } from '@chakra-ui/react'
+import { VscListSelection, } from "react-icons/vsc";
 
 import "@fontsource/hina-mincho"
-
 import "@fontsource/frijole"
 
 import { NavBar } from './navbar'
 import { Content } from './content'
 import theme from './theme'
+import SideBarDrawer from './sidebar/drawer'
 
 export default function RootLayout({ children }) {
 
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const btnRef = useRef()
     return (
         <ChakraProvider theme={theme}>
             <VStack
@@ -22,6 +26,19 @@ export default function RootLayout({ children }) {
             >
                 <NavBar />
                 <Content> {children} </Content>
+
+                < SideBarDrawer isOpen={isOpen} onOpen={onOpen} onClose={onClose} btnRef={btnRef} />
+                <IconButton
+                    display={["inherit", "inherit", "none", 'none',]}
+                    icon={<VscListSelection />}
+                    position={"absolute"}
+                    right={2}
+                    bottom={2}
+                    ref={btnRef}
+                    variant='menuButton'
+                    onClick={onOpen}
+                    zIndex={1}
+                />
             </VStack>
         </ChakraProvider>
     )

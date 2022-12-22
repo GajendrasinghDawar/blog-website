@@ -12,7 +12,7 @@ export default function Custom404() {
 
         <Heading as='h1'
             color={'fill.fillRed'}
-            fontSize={['7rem', '2rem', '7rem']}
+            fontSize={{ base: '2rem', sm: '2rem', md: '7rem', lg: '7rem' }}
         >
             Not Found</Heading>
 

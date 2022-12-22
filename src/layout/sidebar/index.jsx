@@ -1,14 +1,12 @@
-import { useRef } from 'react';
 import { Text, VStack, Hide, IconButton, useDisclosure } from '@chakra-ui/react';
 
 import { Link } from '@chakra-ui/react'
 import { default as NextLink } from "next/link"
 import { useRouter } from 'next/router'
 
-import { VscBook, VscDebugDisconnect, VscSourceControl, VscListSelection } from "react-icons/vsc";
+import { VscBook, VscDebugDisconnect, VscSourceControl, } from "react-icons/vsc";
 import { SlHome } from "react-icons/sl";
 
-import SideBarDrawer from './drawer';
 
 export const sideBarIcon = [
   {
@@ -38,9 +36,6 @@ export const sideBarIcon = [
 ]
 
 const Sidebar = () => {
-
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const btnRef = useRef()
 
   const router = useRouter();
   const currentRoute = router.pathname;
@@ -91,19 +86,6 @@ const Sidebar = () => {
 
         </VStack>
       </VStack>
-      < SideBarDrawer isOpen={isOpen} onOpen={onOpen} onClose={onClose} btnRef={btnRef} />
-      <IconButton
-        display={["inherit", "inherit", "none", 'none',]}
-        icon={<VscListSelection />}
-        position={"absolute"}
-        right={8}
-        bottom={5}
-        ref={btnRef}
-        variant='menuButton'
-        onClick={onOpen}
-        zIndex={1}
-      />
-
     </>
   );
 };

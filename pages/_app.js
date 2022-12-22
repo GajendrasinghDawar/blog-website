@@ -2,12 +2,9 @@ import RootLayout from "../src/layout"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <RootLayout>
-        <Component {...pageProps} />
-      </RootLayout>
-    </>
-
+    <RootLayout>
+      <Component {...pageProps} />
+    </RootLayout>
   )
 
 }
