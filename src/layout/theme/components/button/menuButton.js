@@ -2,7 +2,7 @@ import { defineStyle, defineStyleConfig } from '@chakra-ui/react'
 
 const menuButton = defineStyle({
     background: 'themeButton.whiteOnHoverBg',
-    color: 'fill.fillRed',
+    color: 'fill.fillPink',
     borderRadius: "9999px",
     borderWidth: '1px',
     borderColor: 'transparent',
@@ -14,7 +14,7 @@ const menuButton = defineStyle({
     _dark: {
         background: 'themeButton.darkBg',
 
-        color: 'fill.fillRed'
+        color: 'fill.fillGreen'
     },
     _hover: {
         background: 'themeButton.whiteOnHoverBg',
