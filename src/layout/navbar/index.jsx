@@ -32,27 +32,34 @@ export const NavBar = () => {
 
   return (
     <HStack
-      width="90%"
+      minW="90%"
+      // maxWidth="90%"
+      // w="90%"
       minH={'64px'}
       borderWidth={1}
       justifyContent='space-between'
-      px={'2.5rem'}
+      px={['1rem', null, '2.5rem']}
       mt={2}
       borderRadius={4}
+
     >
       <Link
         as={NextLink}
         href={'/'}
         variant='custom'
+        fontWeight={"semibold"}
+        fontSize={['1rem', '1rem', '1.3rem']}
       >
         GajendrasinghDawar
       </Link>
       <IconButton
+        fontSize='22px'
+
         variant='toggleButton'
         onClick={toggleColorMode}
         aria-label='toggle theme'
         icon={colorMode === 'light' ? <TiAdjustBrightness /> : <IoIosMoon />}
-        mx='1rem'
+
         onChange={() => setIsChecked(!isChecked)}
         onMouseDown={playActive}
         onMouseUp={() => {

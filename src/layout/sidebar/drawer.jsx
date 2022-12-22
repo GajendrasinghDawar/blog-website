@@ -23,11 +23,14 @@ export default function SideBarDrawer({ isOpen, onOpen, onClose, btnRef }) {
         >
             <DrawerOverlay />
             <DrawerContent>
-                <DrawerHeader>
+                <DrawerHeader
+                    minH={'64px'}
+                >
                     <Link
                         as={NextLink}
                         href={'/'}
                         variant='custom'
+                        fontSize={['.9rem', '1rem', null]}
                     >
                         GajendrasinghDawar
                     </Link>
@@ -39,6 +42,7 @@ export default function SideBarDrawer({ isOpen, onOpen, onClose, btnRef }) {
                         justifyContent={'space-around'}
                         height="full"
                         width='full'
+                        textAlign={'center'}
                     >
                         {sideBarIcon.map(
                             (element, index) => {
@@ -46,7 +50,7 @@ export default function SideBarDrawer({ isOpen, onOpen, onClose, btnRef }) {
                                 <Flex
                                     width='70%'
                                     alignItems={'center'}
-                                    textAlign='center'
+                                    textAlign={'center'}
                                     justifyContent={'space-between'}
                                     key={index}
                                 >
@@ -55,6 +59,7 @@ export default function SideBarDrawer({ isOpen, onOpen, onClose, btnRef }) {
                                         icon={element.icon} aria-label="Dashboard" variant='iconButton'
                                     />
                                     <Link
+                                        ml={'0.5rem'}
                                         as={NextLink}
                                         href={element.path}
                                         key={index}

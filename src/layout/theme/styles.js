@@ -8,7 +8,6 @@ const styles = {
                 fontFamily: 'myOldFont',
                 bg: mode('site.whiteBg', 'site.darkBg')(props),
                 lineHeight: "1.5",
-                fontSize: '1.2em',
                 letterSpacing: '1px'
             },
         }

@@ -42,7 +42,7 @@ const nameLogoVariant = defineStyle((props) => {
         bgGradient: lightModeValue,
         transition: 'transform 0.15s ease-out, fontWeight 0.15s ease-out',
         textDecorationStyle: "none",
-        fontWeight: "semibold",
+//  fontWeight: "semibold",
         _dark: {
             bgClip: "text",
             bgGradient: darkModeValue,

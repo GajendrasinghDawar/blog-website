@@ -9,15 +9,13 @@ const { definePartsStyle, defineMultiStyleConfig } =
 
 
 const baseStyleCloseButton = defineStyle({
-    position: "relative",
-    top: "-7",
+    position: 'absolute',
+    top: '2',
     insetEnd: "3",
-    ml: '.5rem',
-    right: "-52",
+    right: '12',
     fontSize: '.8em',
-    // background: 'themeButton.whiteBg',
     background: 'transparent',
-    color: 'themeButton.whiteColor',
+    color: 'fill.fillRed',
     borderRadius: "9999px",
     borderWidth: '1px',
     borderColor: 'transparent',
@@ -27,7 +25,7 @@ const baseStyleCloseButton = defineStyle({
     _dark: {
         // background: 'themeButton.darkBg',
         background: 'transparent',
-        color: 'themeButton.DarkColor',
+        color: 'fill.fillRed',
     },
     _hover: {
         // background: 'themeButton.whiteOnHoverBg',
@@ -40,14 +38,12 @@ const baseStyleCloseButton = defineStyle({
 
 const baseStyleHeader = defineStyle({
     mt: 2,
-    ml: 4,
+    ml: 3.5,
     borderRadius: 4,
     fontWeight: "semibold",
     color: 'site.colorBlack',
     bg: 'site.whiteBg',
-    width: '88%',
-    fontSize: "1.2rem",
-    minH: '64px',
+    maxWidth: '80%',
     borderWidth: '1px',
     _dark: {
         color: 'site.colorWhite',
@@ -65,12 +61,12 @@ const baseStyleBody = defineStyle({
     bg: 'site.whiteBg',
     // new style
     borderWidth: '1px',
-    ml: 4,
+    ml: 3.5,
     mt: 1,
     mb: 1,
     borderRadius: 4,
     height: "80%",
-    width: '80%',
+    maxWidth: '80%',
     _dark: {
         color: 'site.colorWhite',
         backgroundColor: 'site.darkBg ',

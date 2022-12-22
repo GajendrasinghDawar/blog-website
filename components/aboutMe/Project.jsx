@@ -14,7 +14,7 @@ export default function Project({ tools, projectName,
         <Container
             width={'full'}
             height='full'
-            textAlign='justify'
+            textAlign='left'
             // justifyContent={'center'}
             maxW='container.lg'
             p={['1rem', '1rem', '1rem']}
@@ -24,7 +24,8 @@ export default function Project({ tools, projectName,
                 textAlign={'center'}
                 color={'fill.fillBlue'}
                 as={'h1'}
-                size={['lg', 'lg', 'xl',]}
+                // size={['lg', 'lg', 'xl',]}
+                fontSize={{ base: "1rem", sm: "2rem", md: "2rem", lg: "2rem" }}
                 my={2}
             >
                 {projectName}

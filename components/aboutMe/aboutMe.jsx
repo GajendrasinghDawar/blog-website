@@ -5,14 +5,18 @@ export default function AboutMe({ children }) {
     return (
         <Container
             width={'full'}
-            height='full'
+            minHeight='full'
             textAlign='center'
+            alignItems={'center'}
             justifyContent={'center'}
             centerContent
             maxW='container.lg'
+            as='main'
         >
             <Heading
                 variant={'myHeading'}
+                // fontSize={["1.2rem", null, "2rem"]}
+                fontSize={{ base: "1.2rem", sm: "2rem", md: "2rem", lg: "2rem" }}
             >
                 Welcome !
             </Heading>
@@ -22,7 +26,9 @@ export default function AboutMe({ children }) {
             <Heading
                 as='h1'
                 variant={'myHeading'}
-                minH='2.6rem'
+                minH='2.9rem'
+                // fontSize={["1.2rem", null, "2rem"]}
+                fontSize={{ base: "1.2rem", sm: "2rem", md: "2rem", lg: "2rem" }}
             >
                 Gajendrasingh Dawar.</Heading>
             <Text

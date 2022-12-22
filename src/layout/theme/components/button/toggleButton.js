@@ -6,7 +6,7 @@ const toggleButton = defineStyle({
     borderRadius: "9999px",
     borderWidth: '1px',
     borderColor: 'transparent',
-    fontSize: '22px',
+//  fontSize: '22px',
     _focusVisible: {
         background: "themeButton.whiteFocusBg",
     },

@@ -11,7 +11,6 @@ import theme from './theme'
 
 export default function RootLayout({ children }) {
 
-    console.log(theme)
     return (
         <ChakraProvider theme={theme}>
             <VStack
@@ -19,6 +18,7 @@ export default function RootLayout({ children }) {
                 width={'full'}
                 overflow='hidden'
                 spacing={0}
+                fontSize={{ base: '1.0em', sm: '1.2em', md: '1.2em', lg: '1.2em' }}
             >
                 <NavBar />
                 <Content> {children} </Content>

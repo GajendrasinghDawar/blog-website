@@ -79,7 +79,10 @@ export default function index() {
                             m='1rem'
                         >
                             <CardHeader>
-                                <Heading size='md' color={project.color}>
+                                <Heading
+                                    // size='md'
+                                    fontSize={{ base: '1.0em', sm: '1.2em', md: '1.2em', lg: '1.2em' }}
+                                    color={project.color}>
                                     {project.name}
                                 </Heading>
                             </CardHeader>

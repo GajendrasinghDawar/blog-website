@@ -7,10 +7,10 @@ export const Content = ({ children }) => {
   return (
     <HStack
       width="full"
+      height="full"
       flex={1}
       overflow="hidden"
       spacing={0}
-      borderColor='red'
       transition={'ease-in-out .4s'}
     >
       <SideBar />

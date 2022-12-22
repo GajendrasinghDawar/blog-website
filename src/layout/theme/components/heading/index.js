@@ -4,8 +4,7 @@ import { defineStyleConfig } from "@chakra-ui/styled-system"
 export const Heading = defineStyleConfig({
     variants: {
         myHeading: {
-            fontSize: "2rem",
-            lineHeight: 1.2,
+            // lineHeight: 1.2,
             _light: {
                 bgGradient: `linear-gradient(
                  90deg,

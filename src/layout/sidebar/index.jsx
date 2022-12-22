@@ -48,6 +48,7 @@ const Sidebar = () => {
   return (
     <>
       <VStack
+        as='aside'
         width={{ base: '10%', md: '10%', lg: '10%' }}
         height="90%"
         borderWidth={'1px'}
@@ -65,6 +66,7 @@ const Sidebar = () => {
           alignItems={'center'}
           textAlign='center'
           padding={'1rem'}
+          as='nav'
         >
           {sideBarIcon.map((element, index) => {
             return (
@@ -99,6 +101,7 @@ const Sidebar = () => {
         ref={btnRef}
         variant='menuButton'
         onClick={onOpen}
+        zIndex={1}
       />
 
     </>
