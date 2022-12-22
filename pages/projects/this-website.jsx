@@ -3,13 +3,16 @@ import Project from '../../components/aboutMe/Project'
 
 const Tools = [
     {
-        name: 'ChakraUi',
-        detail: 'Used Chakra Ui for designing frontEnd.'
+        name: 'ChakraUI',
+        detail: 'to quickly build UI.'
     }, {
-        name: 'aws amplify',
-        detail: `I used AWS Amplify for deploying this Portfolio.`
+        name: 'AWS amplify',
+        detail: `I used this for deploying.`
     },
-
+    {
+        name: 'NextJs',
+        detail: 'SSR for React.',
+    }
 ]
 
 const projectName = 'this website'

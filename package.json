@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.12",
     "@chakra-ui/react": "latest",
     "@fontsource/fredoka-one": "^4.5.9",
     "@fontsource/frijole": "^4.5.10",

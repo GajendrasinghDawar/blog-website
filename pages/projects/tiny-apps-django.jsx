@@ -4,13 +4,13 @@ import Project from '../../components/aboutMe/Project'
 const Tools = [
 
     {
-        name: ' Django for  Serve Json'
-        , detail: `I used Channels for real - time communication between the Client and the Server.For Django Channels' storage layer, I used Redis.`
+        name: ' Django for  Serving JSON'
+        , detail: `I used Django for the web server. Django serves all apps using single projects. It deployed on python anywhere.`
     }
 ]
 
 const projectName = `Tiny Django Apps`
-const projectDetail = `It's collection of  Django apps such as Todo,todo API,Movie Review App,And More. 
+const projectDetail = `It's a collection of Django apps such as Todo, todo API, Movie Review App, And More. 
 `
 
 export default function TinyAppsDjango() {

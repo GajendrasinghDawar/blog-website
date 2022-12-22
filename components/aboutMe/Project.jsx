@@ -15,9 +15,10 @@ export default function Project({ tools, projectName,
             width={'full'}
             height='full'
             textAlign='justify'
-            // centerContent
+            // justifyContent={'center'}
             maxW='container.lg'
-            pt={['2rem', '2rem', '2rem']}
+            p={['1rem', '1rem', '1rem']}
+
         >
             <Heading
                 textAlign={'center'}
@@ -40,7 +41,6 @@ export default function Project({ tools, projectName,
                 color={'fill.fillGreen'}
                 textAlign={'center'}
                 letterSpacing='.3rem'
-            // color={'text.textColorYellow'}
             >
                 Tools I have used in this project
             </Heading>
@@ -52,7 +52,9 @@ export default function Project({ tools, projectName,
                         <ListItem
                             my='1rem'
                             color={'fill.fillRed'}>
-                            <ListIcon as={AiFillStar} color={'fill.fillRed'}
+                            <ListIcon
+                                as={AiFillStar}
+                                color={'fill.fillRed'}
                             />
                             {tool.name}
                         </ListItem>

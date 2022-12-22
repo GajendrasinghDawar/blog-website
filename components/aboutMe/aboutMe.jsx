@@ -17,7 +17,7 @@ export default function AboutMe({ children }) {
                 Welcome !
             </Heading>
             <Text>
-                Hello! my name is
+                My name is
             </Text>
             <Heading
                 as='h1'
